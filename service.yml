@@ -1,0 +1,12 @@
+apiversion: v1
+kind: Service
+metadata:
+  name: kuberpro-Service
+spec:
+  type: LoadBalancer
+  selector:
+    app: kuberpro
+  ports:
+    - protocol:TCP
+      port: 80
+      targetPort: 80
